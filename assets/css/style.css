@@ -1,0 +1,288 @@
+/* ================
+General style
+=================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* ======Font/Color======== */
+
+/* Font: Lora/ Work sans
+font-family: 'Lora', serif;
+font-family: 'Work Sans', sans-serif; 
+Farbe: #2e2e2e / #fff / #000 / #1d2c2f */
+
+/* ================
+header
+=================== */
+
+header section {
+    display: flex;
+    justify-content: space-between;
+}
+
+header section article {
+    margin: auto 0 auto 15vw;
+    padding: 35vh 0vw;
+    text-align: center;
+}
+
+header section article h1 {
+    font-size: 70px;
+    font-family: 'Lora', serif;
+}
+
+header section article p {
+    font-size: 20px;
+    font-family: 'Lora', serif;
+}
+
+header section div {
+    background: url(../img/design-interior-1.jpg) top right/cover no-repeat;
+    width: 60%;
+}
+
+/* ======sticky nav======== */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: #2e2e2e;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    color: #fff;
+    padding: 0 5vw;
+}
+
+/* ================
+main 
+=================== */
+
+main section:nth-of-type(1) {
+    background-color: #2e2e2e;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section:nth-of-type(1) div {
+    margin: 6% 3% 6% 0%;
+    ;
+}
+
+main section:nth-of-type(1) article {
+    margin: auto 0;
+    width: 40vw;
+}
+
+main section:nth-of-type(1) article h2 {
+    font-family: 'Lora', serif;
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+}
+
+main section:nth-of-type(1) article p {
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    line-height: 30px;
+    margin: 3vh 0;
+}
+
+/* =======Main Section 2====== */
+
+main section:nth-of-type(2) {
+    text-align: center;
+}
+
+main section:nth-of-type(2) h2 {
+    font-family: 'Lora', serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 20vh 0 0 0;
+}
+
+main section:nth-of-type(2) p {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 0 10vh 0;
+}
+
+main section:nth-of-type(2) article {
+    display: flex;
+    margin: 0 0 10vh 0;
+    justify-content: space-evenly;
+}
+
+main section:nth-of-type(2) article figure img {
+    width: 70%;
+}
+
+main section:nth-of-type(2) iframe {
+    margin: 0 0 10vh 0;
+}
+
+/* ================
+footer
+=================== */
+
+footer {
+    background-color: #2e2e2e;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-around;
+    padding: 25vh 0;
+}
+
+footer section article {
+    width: 30vw;
+}
+
+footer section article h2 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Lora', serif;
+    margin-bottom: 3vh;
+}
+
+footer section article p {
+    color: #fff;
+    padding: 1vh 0;
+    line-height: 4vh;
+    font-weight: 300;
+    word-spacing: 0.5vw;
+}
+
+footer section form div {
+    margin-bottom: 5vh;
+}
+
+footer section form label {
+    display: block;
+    color: #fff;
+    font-family: 'Lora', serif;
+}
+
+footer section form div input {
+    padding: 0.5vh 10vw;
+}
+
+.inputMassage {
+    padding: 1vh 10vw;
+}
+
+.inputButton {
+    padding: 0.5vh 1vw;
+}
+
+footer nav {
+    background-color: #1d2c2f;
+    padding: 3vh 0;
+    color: white;
+}
+
+footer nav p {
+    font-family: 'Lora', serif;
+    margin-left: 2vw;
+}
+
+footer nav ul li {
+    padding: 0 2.5vw;
+    font-family: 'Lora', serif;
+}
+
+/* ================
+Mobile Style
+=================== */
+
+/* =======header====== */
+
+@media only screen and (max-width:800px) {
+    header section article {
+        padding: 15vh 0vw;
+        margin: 0 auto;
+    }
+}
+
+/* =======main section 1====== */
+
+@media only screen and (max-width:800px) {
+    main section:nth-of-type(1) div img {
+        width: 80%;
+        margin: 0 0 0 10vw;
+    }
+    main section:nth-of-type(1) article {
+        margin: 0 auto;
+        text-align: center;
+        width: 60vw;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    nav ul li {
+        padding: 0 3vw;
+    }
+}
+
+/* =======main section 2====== */
+
+@media only screen and (max-width:800px) {
+    main section:nth-of-type(2) article {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    main section:nth-of-type(2) article img {
+        padding: 20px;
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+/* =======footer====== */
+
+@media only screen and (max-width:800px) {
+    footer section {
+        display: block;
+    }
+    footer section article {
+        margin: 0 auto;
+        width: 60vw;
+    }
+    footer section form {
+        margin: 10vh auto;
+    }
+    footer section form div label {
+        text-align: center;
+    }
+    footer section form div input {
+        padding: 3vh 25vw;
+        margin: 0 0 0 13vw
+    }
+    .inputMassage {
+        padding: 3vh 25vw;
+    }
+    .inputButton {
+        padding: 0.5vh 1vw;
+        
+    }
+}
